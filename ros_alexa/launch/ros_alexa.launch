@@ -1,0 +1,9 @@
+<launch>
+	
+	<include file="$(find listener)/launch/listener.launch"/>
+	
+	<group ns="ros_alexa">
+		<node name="ros_alexa" pkg="ros_alexa" type="main.py" output="screen"/>
+	</group>	
+	
+</launch>
